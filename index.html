@@ -299,7 +299,7 @@
         <div style="font-size:12px;font-weight:800;color:#FFFFFF;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;">
           4 Diagnostic Engines
         </div>
-        <ul style="list-style:none;padding:0;margin:0;font-size:13.5px;line-height:2;">
+               <ul style="list-style:none;padding:0;margin:0;font-size:13.5px;line-height:2;">
           <li><a href="https://streamlit.app" target="_blank" style="color:#94A3B8;">Enterprise Diagnostic OS™</a></li>
           <li><a href="https://streamlit.app" target="_blank" style="color:#94A3B8;">Inventory &amp; Cashflow Forecaster</a></li>
           <li><a href="https://streamlit.app" target="_blank" style="color:#94A3B8;">Polyglot Customer Voice NLP</a></li>
@@ -311,4 +311,41 @@
         <div style="font-size:12px;font-weight:800;color:#FFFFFF;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;">
           Twevix Ecosystem
         </div>
+        <ul style="list-style:none;padding:0;margin:0;font-size:13.5px;line-height:2;">
+          <li><a href="https://twevix.com" target="_blank" style="color:#94A3B8;">Twevix Care™ (HealthTech AI)</a></li>
+          <li><a href="https://streamlit.app" target="_blank" style="color:#94A3B8;">TWEVIX PULSE™ SHA-256 Verifier</a></li>
+          <li><a href="https://streamlit.app" target="_blank" style="color:#94A3B8;">Verified Talent Pool &amp; Squads</a></li>
+          <li><a href="https://streamlit.app" target="_blank" style="color:#38BDF8;font-weight:700;">Launch Diagnostic OS →</a></li>
+        </ul>
+      </div>
+    </div>
 
+    <div style="max-width:1160px;margin:32px auto 0;padding-top:20px;border-top:1px solid #1E293B;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;color:#64748B;">
+      <span>© 2026 Twevix Enterprise™ • Decision-Intelligence &amp; Governance Architecture (UK &amp; Rwanda)</span>
+      <span>GDPR / Data-Protection Compliant • Zero Raw PII Storage</span>
+    </div>
+  </footer>
+
+  <script>
+    function claimEnterpriseKit(e) {
+      e.preventDefault();
+      const name = document.getElementById("entName").value;
+      const email = document.getElementById("entEmail").value;
+      document.getElementById("ent-msg").style.display = "block";
+
+      fetch("https://formspree.io", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          _subject: "Twevix Enterprise SME Diagnostic Kit Unlocked: " + name,
+          company_name: name,
+          work_email: email
+        })
+      }).finally(() => {
+        window.open("PASTE_YOUR_ENTERPRISE_GOOGLE_DRIVE_FOLDER_LINK_HERE", "_blank");
+      });
+    }
+  </script>
+
+</body>
+</html>
